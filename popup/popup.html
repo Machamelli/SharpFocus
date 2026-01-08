@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SharpFocus Settings</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="brand">
+        <div class="logo">⚡</div>
+        <span class="brand-name">Sharp Focus</span>
+      </div>
+      <button id="theme-toggle" class="icon-btn" title="Toggle Theme">
+        🌙
+      </button>
+    </div>
+
+    <!-- Main Toggle -->
+    <div class="main-toggle">
+      <button id="toggle-extension" class="toggle-btn">
+        <span class="status-dot"></span>
+        <span class="btn-text">Loading...</span>
+      </button>
+    </div>
+
+    <!-- Whitelisted Domains -->
+    <div class="section">
+      <h4 class="section-title">Whitelisted Domains</h4>
+      <div class="input-group">
+        <input
+          type="text"
+          id="domain-input"
+          placeholder="e.g., wikipedia.org"
+        />
+        <button id="add-domain" class="add-btn">Add</button>
+      </div>
+      <ul id="domain-list" class="domain-list"></ul>
+    </div>
+
+    <!-- Settings -->
+    <div class="section">
+      <h4 class="section-title">Settings</h4>
+      <div class="checkbox-grid">
+        <label class="checkbox-label">
+          <input type="checkbox" id="hide-top-bar" />
+          <span>Top Bar</span>
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" id="hide-video-description" />
+          <span>Description</span>
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" id="hide-comments" />
+          <span>Comments</span>
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" id="hide-recommendations" />
+          <span>Recommendations</span>
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" id="hide-channel-info" />
+          <span>Channel Info</span>
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" id="hide-shorts" />
+          <span>Shorts</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Save Button -->
+    <button id="save-settings" class="save-btn">Save</button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
