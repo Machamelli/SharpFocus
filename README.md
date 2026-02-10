@@ -1,4 +1,4 @@
-# SharpFocus ✅
+<img src="assets/icons/icon-96.png" width="96" alt="SharpFocus Logo">
 
 **SharpFocus** is a small, privacy-friendly Firefox extension that helps you stay focused while watching YouTube by removing distractions and providing a global focus overlay for other tabs.
 
